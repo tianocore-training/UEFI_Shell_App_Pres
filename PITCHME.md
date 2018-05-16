@@ -155,11 +155,11 @@ USE THESE AS BULLETS
 
 
 
----?image=/assets/images/slides/Slide11.JPG
+---?image=/assets/images/slides/Slide11_1.JPG
 @title[What is a UEFI Shell?]
 ### <p align="right"><span class="gold" >UEFI Shell Specification V. 2.2</span></p>
-<br>
 <p align="right"><span style="font-size:0.6em" > <a href="http://www.uefi.org/specsandtesttools"> http://www.uefi.org/specsandtesttools</a></span></p>
+<br>
 <br>
 <br>
 <br>
@@ -413,7 +413,7 @@ Mapping – FS0 instead of full
 ---?image=/assets/images/slides/Slide31.JPG
 <!-- .slide: data-transition="none" -->
 @title[ShellPkg Main Libraries]
-### <p align="right"><span class="gold" >ShellPkg Main Libraries</span></p>
+<p align="right"><span style="font-size:01.1em"><font color="#e49436">ShellPkg Main Libraries</font></span></p>
 
 
 Note:
@@ -442,7 +442,7 @@ sorting of handles to determine parent controllers, child controllers, or which 
 <!-- .slide: data-background-transition="none" -->
 <!-- .slide: data-transition="none" -->
 @title[ShellPkg Main Libraries 02]
-### <p align="right"><span class="gold" >ShellPkg Main Libraries</span></p>
+<p align="right"><span style="font-size:01.1em"><font color="#e49436">ShellPkg Main Libraries</font></span></p>
 
 Note: 
 
@@ -450,7 +450,7 @@ Note:
 <!-- .slide: data-background-transition="none" -->
 <!-- .slide: data-transition="none" -->
 @title[ShellPkg Main Libraries 03]
-### <p align="right"><span class="gold" >ShellPkg Main Libraries</span></p>
+<p align="right"><span style="font-size:01.1em"><font color="#e49436">ShellPkg Main Libraries</font></span></p>
 
 Note: 
 
@@ -476,7 +476,7 @@ sorting of handles to determine parent controllers, child controllers, or which 
 ---?image=/assets/images/slides/Slide35.JPG
 <!-- .slide: data-transition="none" -->
 @title[EDK II ShellPkg]
-### <p align="right"><span class="gold" >ShellPkg Main Libraries</span></p>
+<p align="right"><span style="font-size:01.1em"><font color="#e49436">ShellPkg Main Libraries</font></span></p>
 
 Note: 
 
@@ -497,7 +497,7 @@ Note:
 <!-- .slide: data-background-transition="none" -->
 <!-- .slide: data-transition="none" -->
 @title[EDK II ShellPkg 02]
-### <p align="right"><span class="gold" >ShellPkg Main Libraries</span></p>
+<p align="right"><span style="font-size:01.1em"><font color="#e49436">ShellPkg Main Libraries</font></span></p>
 
 Note: 
 
@@ -506,7 +506,7 @@ Note:
 <!-- .slide: data-background-transition="none" -->
 <!-- .slide: data-transition="none" -->
 @title[EDK II ShellPkg 03]
-### <p align="right"><span class="gold" >ShellPkg Main Libraries</span></p>
+<p align="right"><span style="font-size:01.1em"><font color="#e49436">ShellPkg Main Libraries</font></span></p>
 
 Note: 
 
@@ -525,7 +525,7 @@ Note:
 	
 ---
 @title[Shell Call example]
-<p align="center"><span class="gold" >Shell Call Example</span></p>
+<p align="right"><span style="font-size:01.1em"><font color="#e49436">ShellPkg Main Libraries</font></span></p>
 
 ```C++
 // use UEFI shell 2.x interface
@@ -681,13 +681,13 @@ UEFI Shell Documentation updated in the Engineering Resources section
 <br>
 <p align="center"><span class="gold" >UEFI Shell 2.2   &nbsp;&nbsp;Vs.   &nbsp;&nbsp;EFI Shell 1.0</span></p>
 <br>
-@fa[circle gp-bullet-ltgreen]<span style="font-size:0.9em">&nbsp;&nbsp;UEFI Shell 2.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- EFI_SHELL_PARAMETERS_PROTOCOL</span><br>
-@fa[circle gp-bullet-yellow]<span style="font-size:0.9em">&nbsp;&nbsp;EFI Shell 1.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- EFI_SHELL_INTERFACE</span>             
+@fa[circle gp-bullet-ltgreen]<span style="font-size:0.9em">&nbsp;&nbsp;UEFI Shell 2.x&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- EFI_SHELL_PARAMETERS_PROTOCOL</span><br>
+@fa[circle gp-bullet-yellow]<span style="font-size:0.9em">&nbsp;&nbsp;EFI Shell 1.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- EFI_SHELL_INTERFACE</span>             
 <br>
 ```C
 //
-#include <Protocol/EfiShellInterface.h> //Shell 1.0
-#include <Protocol/ShellParameters.h>   //Shell 2.0
+#include <Protocol/EfiShellInterface.h> //GUID protocol for EFI Shell 1.0
+#include <Protocol/ShellParameters.h>   //GUID protocol for UEFI Shell 2.x
 
 // . . .
 
@@ -706,7 +706,6 @@ Protocol GUID will be for either Shell 1.0 or Shell 2.0
 
 +++?code=Sample/MyShellApp/MyShellApp.c&lang=c++&title=UEFI Shell 2.2 Vs. EFI Shell 1.0
 
-@[60-61](Protocol GUID will be for either Shell 1.0 or Shell 2.0)
 @[70-79](check input parameters from command line using UEFI Shell 2.2)
 @[81-82](No error so assign Argc & Argv from Shell 2.2)
 @[85-92](Else, check if EFI Shell 1.0 )
