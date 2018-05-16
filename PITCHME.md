@@ -878,7 +878,8 @@ The EFI shell is replacing what is to the left of the “:” with the device pa
 
 ---  
 @title[Summary]
-##### <p align="center"<span class="gold"   >Summary </span></p><br>
+<BR>
+### <p align="center"><span class="gold"   >Summary </span></p><br>
 <br>
  @fa[certificate gp-bullet-green]<span style="font-size:0.9em">&nbsp;&nbsp;Explain UEFI, the shell, and how they work together </span><br>
  @fa[certificate gp-bullet-cyan]<span style="font-size:0.9em">&nbsp;&nbsp;Define the shell components</span><br>
