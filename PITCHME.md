@@ -569,9 +569,9 @@ Note:
  @fa[circle gp-bullet-magenta]<span style="font-size:0.9em">&nbsp;&nbsp;Contains <b>.nsh</b> extention</span> <br>
  @fa[circle gp-bullet-gold]<span style="font-size:0.9em">&nbsp;&nbsp;"Startup.nsh" runs first</span> <br>
  @fa[circle gp-bullet-cyan]<span style="font-size:0.9em">&nbsp;&nbsp;Supports:</span><br>
- <span style="font-size:0.6em">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&check;&nbsp;&nbsp;Command-line arguments</span><br>
- <span style="font-size:0.6em">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&check;&nbsp;&nbsp;Standard script commands</span> <br>
- <span style="font-size:0.6em">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&check;&nbsp;&nbsp;Input & output redirection & pipes</span><br>
+ <span style="font-size:0.7em">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&check;&nbsp;&nbsp;Command-line arguments</span><br>
+ <span style="font-size:0.7em">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&check;&nbsp;&nbsp;Standard script commands</span> <br>
+ <span style="font-size:0.7em">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&check;&nbsp;&nbsp;Input & output redirection & pipes</span><br>
  
 
 Note: 
@@ -668,7 +668,7 @@ endfor
 <br>
 <br>
 <br>
- @fa[book-open gp-bullet-ltgreen]<span style="font-size:0.9em">&nbsp;&nbsp;Documenation Link:<br> &nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/tianocore/tianocore.github.io/wiki/ShellPkg">wiki Shell Package</a></span>
+ @fa[book gp-bullet-ltgreen]<span style="font-size:0.9em">&nbsp;&nbsp;Documenation Link:<br> &nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/tianocore/tianocore.github.io/wiki/ShellPkg">wiki Shell Package</a></span>
 
 
 Note:
@@ -677,7 +677,8 @@ UEFI Shell Documentation updated in the Engineering Resources section
 
 
 ---?code=Sample/MyShellApp/MyShellApp.c&lang=c++&title=UEFI Shell 2.2   &nbsp;&nbsp;Vs.   &nbsp;&nbsp;EFI Shell 1.0
-
+@fa[book gp-bullet-ltgreen]<span style="font-size:0.9em">&nbsp;&nbsp;UEFI Shell 2.2&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp- EFI_SHELL_PARAMETERS_PROTOCOL
+@fa[book gp-bullet-yellow]<span style="font-size:0.9em">&nbsp;&nbsp;EFI Shell 1.0&nbsp;&nbsp&nbsp;&nbsp&nbsp;&nbsp  - EFI_SHELL_INTERFACE              
 
 Note:
 
@@ -688,6 +689,7 @@ Simply try to open one GUID verse the other to see which Shell is currently in u
 
 +++?code=Sample/MyShellApp/MyShellApp.c&lang=c++&title=UEFI Shell 2.2   &nbsp;&nbsp;Vs.   &nbsp;&nbsp;EFI Shell 1.0
 
+@[60-61](Protocol GUID will be for either Shell 1.0 or Shell 2.0)
 @[70-79](check input parameters from command line using UEFI Shell 2.2)
 @[81-82](No error so assign Argc & Argv from Shell 2.2)
 @[85-92](Else, check if EFI Shell 1.0 )
@@ -758,7 +760,7 @@ Boot UEFI Shell from FAT/FAT32 partition:
 <!-- .slide: data-transition="none" -->	 
 @title[UEFI File System & Device Path]
 
-<p align="left"><span class="gold" >UEFI File System & Device Path</span></p>
+<p align="right"><span class="gold" >UEFI File System & Device Path</span></p>
 
 
 Note:
@@ -783,7 +785,7 @@ The EFI shell is replacing what is to the left of the “:” with the device pa
 <!-- .slide: data-transition="none" -->	 
 @title[UEFI File System & Device Path 02]
 <br>
-<p align="left"><span class="gold" >UEFI File System & Device Path</span></p>
+<p align="right"><span class="gold" >UEFI File System & Device Path</span></p>
 
 Note:
 
@@ -793,7 +795,7 @@ Note:
 <!-- .slide: data-transition="none" -->	 
 @title[UEFI File System & Device Path 03]
 <br>
-<p align="left"><span class="gold" >UEFI File System & Device Path</span></p>
+<p align="right"><span class="gold" >UEFI File System & Device Path</span></p>
 
 Note:
 
@@ -802,7 +804,7 @@ Note:
 <!-- .slide: data-transition="none" -->	 
 @title[UEFI File System & Device Path 04]
 <br>
-<p align="left"><span class="gold" >UEFI File System & Device Path</span></p>
+<p align="right"><span class="gold" >UEFI File System & Device Path</span></p>
 
 Note:
 
@@ -811,7 +813,7 @@ Note:
 <!-- .slide: data-transition="none" -->	 
 @title[UEFI File System & Device Path 05]
 <br>
-<p align="left"><span class="gold" >UEFI File System & Device Path</span></p>
+<p align="right"><span class="gold" >UEFI File System & Device Path</span></p>
 
 Note:
 
@@ -820,7 +822,7 @@ Note:
 <!-- .slide: data-transition="none" -->	 
 @title[UEFI File System & Device Path 06]
 <br>
-<p align="left"><span class="gold" >UEFI File System & Device Path</span></p>
+<p align="right"><span class="gold" >UEFI File System & Device Path</span></p>
 
 Note:
 
@@ -829,7 +831,7 @@ Note:
 <!-- .slide: data-transition="none" -->	 
 @title[UEFI File System & Device Path 07]
 <br>
-<p align="left"><span class="gold" >UEFI File System & Device Path</span></p>
+<p align="right"><span class="gold" >UEFI File System & Device Path</span></p>
 
 Note:
 
@@ -839,7 +841,7 @@ Note:
 <!-- .slide: data-transition="none" -->	 
 @title[UEFI File System & Device Path 08]
 <br>
-<p align="left"><span class="gold" >UEFI File System & Device Path</span></p>
+<p align="right"><span class="gold" >UEFI File System & Device Path</span></p>
 
 Note:
 Can manipulate only UEFI system partitions (FAT/FAT32) where boot loader and UEFI applications are located:
