@@ -681,11 +681,9 @@ UEFI Shell Documentation updated in the Engineering Resources section
 <br>
 <p align="center"><span class="gold" >UEFI Shell 2.2   &nbsp;&nbsp;Vs.   &nbsp;&nbsp;EFI Shell 1.0</span></p>
 <br>
-@fa[circle gp-bullet-ltgreen]<span style="font-size:0.9em">&nbsp;&nbsp;UEFI Shell 2.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- EFI_SHELL_PARAMETERS_PROTOCOL<br>
-@fa[circle gp-bullet-yellow]<span style="font-size:0.9em">&nbsp;&nbsp;EFI Shell 1.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  - EFI_SHELL_INTERFACE              
-
+@fa[circle gp-bullet-ltgreen]<span style="font-size:0.9em">&nbsp;&nbsp;UEFI Shell 2.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- EFI_SHELL_PARAMETERS_PROTOCOL</span><br>
+@fa[circle gp-bullet-yellow]<span style="font-size:0.9em">&nbsp;&nbsp;EFI Shell 1.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- EFI_SHELL_INTERFACE</span>             
 <br>
-
 ```C
 //
 #include <Protocol/EfiShellInterface.h> //Shell 1.0
@@ -706,7 +704,7 @@ Note:
 Protocol GUID will be for either Shell 1.0 or Shell 2.0
 
 
-+++?code=Sample/MyShellApp/MyShellApp.c&lang=c++&title=UEFI Shell 2.2&nbsp;&nbsp;Vs.&nbsp;&nbsp;EFI Shell 1.0
++++?code=Sample/MyShellApp/MyShellApp.c&lang=c++&title=UEFI Shell 2.2 Vs. EFI Shell 1.0
 
 @[60-61](Protocol GUID will be for either Shell 1.0 or Shell 2.0)
 @[70-79](check input parameters from command line using UEFI Shell 2.2)
