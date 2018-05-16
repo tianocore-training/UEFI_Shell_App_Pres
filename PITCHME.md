@@ -525,7 +525,7 @@ Note:
 	
 ---
 @title[Shell Call example]
-<p align="right"><span style="font-size:01.1em"><font color="#e49436">ShellPkg Main Libraries</font></span></p>
+<p align="right"><span style="font-size:01.1em"><font color="#e49436">Shell Call Example</font></span></p>
 
 ```C++
 // use UEFI shell 2.x interface
@@ -564,7 +564,7 @@ Note:
 ---
 @title[Enhanced Scripting details]
 <br>
-<p align="center"><span class="gold" >Shell Enhanced Scripting</span></p>
+<p align="center"><span style="font-size:01.1em"><font color="#e49436">Shell Enhanced Scripting</font></span></p>
 <br>
  @fa[circle gp-bullet-magenta]<span style="font-size:0.9em">&nbsp;&nbsp;Contains <b>.nsh</b> extention</span> <br>
  @fa[circle gp-bullet-gold]<span style="font-size:0.9em">&nbsp;&nbsp;"Startup.nsh" runs first</span> <br>
@@ -593,7 +593,7 @@ Note:
 ---?image=/assets/images/slides/Slide43.JPG
 @title[Shell Scripts (Benefits)]
 <br>
-<p align="center"><span class="gold" >Shell Scripts (Benefits)</span></p>
+<p align="center"><span style="font-size:01.1em"><font color="#e49436">Shell Scripts (Benefits)</font></span></p>
 
 Note: 
 
@@ -610,7 +610,7 @@ The UEFI Shell can execute commands from a file, which is called a batch script 
 ---
 @title[Script Detects Shell Capabilities]
 <br>
-<p align="center"><span class="gold" >Script Detects Shell Capabilities</span></p>
+<p align="center"><span style="font-size:01.1em"><font color="#e49436">Script that Detects Shell Capabilities</font></span></p>
 <br>
 ```shell
 # check if Shell supports level 3 commands
@@ -664,7 +664,7 @@ endfor
 
 ---?image=/assets/images/slides/Slide47.JPG
 @title[Documentation for EDK II ShellPkg]
-<p align="center"><span class="gold" >Documentation for EDK II ShellPkg</span></p>
+<p align="center"><span style="font-size:01.1em"><font color="#e49436">Documentation for EDK II ShellPkg</font></span></p>
 <br>
 <br>
 <br>
@@ -679,7 +679,7 @@ UEFI Shell Documentation updated in the Engineering Resources section
 ---?
 @title[UEFI Shell 2.2 Vs. EFI Shell 1.0]
 <br>
-<p align="center"><span class="gold" >UEFI Shell 2.2   &nbsp;&nbsp;Vs.   &nbsp;&nbsp;EFI Shell 1.0</span></p>
+<p align="center"><span style="font-size:01.1em"><font color="#e49436">UEFI Shell 2.2   &nbsp;&nbsp;Vs.   &nbsp;&nbsp;EFI Shell 1.0</font></span></p>
 <br>
 @fa[circle gp-bullet-ltgreen]<span style="font-size:0.9em">&nbsp;&nbsp;UEFI Shell 2.x&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- EFI_SHELL_PARAMETERS_PROTOCOL</span><br>
 @fa[circle gp-bullet-yellow]<span style="font-size:0.9em">&nbsp;&nbsp;EFI Shell 1.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- EFI_SHELL_INTERFACE</span>             
@@ -775,7 +775,7 @@ Boot UEFI Shell from FAT/FAT32 partition:
 ---?image=/assets/images/slides/Slide58.JPG
 <!-- .slide: data-transition="none" -->	 
 @title[UEFI File System & Device Path]
-
+<br>
 <p align="right"><span class="gold" >UEFI File System & Device Path</span></p>
 
 
