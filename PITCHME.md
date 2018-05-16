@@ -682,11 +682,11 @@ UEFI Shell Documentation updated in the Engineering Resources section
 <p align="center"><span class="gold" >UEFI Shell 2.2   &nbsp;&nbsp;Vs.   &nbsp;&nbsp;EFI Shell 1.0</span></p>
 <br>
 @fa[circle gp-bullet-ltgreen]<span style="font-size:0.9em">&nbsp;&nbsp;UEFI Shell 2.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- EFI_SHELL_PARAMETERS_PROTOCOL<br>
-@fa[circle gp-bullet-yellow]<span style="font-size:0.9em">&nbsp;&nbsp;EFI Shell 1.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  - EFI_SHELL_INTERFACE              
+@fa[circle gp-bullet-yellow]<span style="font-size:0.9em">&nbsp;&nbsp;EFI Shell 1.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  - EFI_SHELL_INTERFACE              
 
 <br>
 
-```C++
+```C
 //
 #include <Protocol/EfiShellInterface.h> //Shell 1.0
 #include <Protocol/ShellParameters.h>   //Shell 2.0
