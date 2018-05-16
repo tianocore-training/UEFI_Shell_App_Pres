@@ -41,15 +41,17 @@ Note:
 ---  
 @title[Lesson Objective]
 <BR>
-### <p align="center"<span class="gold"   >Platform Build Labs </span></p><br>
+### <p align="center"<span class="gold"   >Lesson Objective </span></p><br>
 
 <!---  Add bullets using https://fontawesome.com/cheatsheet certificate
 -->
- @fa[certificate gp-bullet-green]<span style="font-size:0.9em">&nbsp;&nbsp;Explain UEFI, the shell, and how they work together </span><br><br>
- @fa[certificate gp-bullet-cyan]<span style="font-size:0.9em">&nbsp;&nbsp;Define the shell components</span><br><br>
- @fa[certificate gp-bullet-yellow]<span style="font-size:0.9em">&nbsp;&nbsp;Use the shell  API  in a UEFI application</span> <br><br>
- @fa[certificate gp-bullet-magenta]<span style="font-size:0.9em">&nbsp;&nbsp;UEFI Shell command Library</span> 
+<br>
+ @fa[certificate gp-bullet-green]<span style="font-size:0.9em">&nbsp;&nbsp;Explain UEFI, the shell, and how they work together </span><br>
+ @fa[certificate gp-bullet-cyan]<span style="font-size:0.9em">&nbsp;&nbsp;Define the shell components</span><br>
+ @fa[certificate gp-bullet-yellow]<span style="font-size:0.9em">&nbsp;&nbsp;Use the shell  API  in a UEFI application</span> <br>
+ @fa[certificate gp-bullet-magenta]<span style="font-size:0.9em">&nbsp;&nbsp;UEFI Shell command Library</span> <br>
  @fa[certificate gp-bullet-ltgreen]<span style="font-size:0.9em">&nbsp;&nbsp;UEFI Shell scripts</span> 
+
 
 ---?image=assets/images/binary-strings-black2.jpg
 @title[UEFI Shell Overview Section]
@@ -156,7 +158,8 @@ USE THESE AS BULLETS
 ---?image=/assets/images/slides/Slide11.JPG
 @title[What is a UEFI Shell?]
 ### <p align="right"><span class="gold" >UEFI Shell Specification V. 2.2</span></p>
-<p align="right"><span style="font-size:0.7em" > <a href="http://www.uefi.org/specsandtesttools"> http://www.uefi.org/specsandtesttools</a></span></p>
+<br>
+<p align="right"><span style="font-size:0.6em" > <a href="http://www.uefi.org/specsandtesttools"> http://www.uefi.org/specsandtesttools</a></span></p>
 <br>
 <br>
 <br>
@@ -164,7 +167,7 @@ USE THESE AS BULLETS
 <br>
 <br>
 <br>
-<span style="font-size:0.6em" >UEFI Shell v2.0 specification first released 2008 – Latest V2.2 Jan 2016 </span>
+<span style="font-size:0.7em" >UEFI Shell v2.0 specification first released 2008 – Latest V2.2 Jan 2016 </span>
 
 Note:
 
@@ -410,7 +413,7 @@ Mapping – FS0 instead of full
 ---?image=/assets/images/slides/Slide31.JPG
 <!-- .slide: data-transition="none" -->
 @title[ShellPkg Main Libraries]
-<p align="right"><span class="gold" >ShellPkg Main Libraries</span></p>
+### <p align="right"><span class="gold" >ShellPkg Main Libraries</span></p>
 
 
 Note:
@@ -439,7 +442,7 @@ sorting of handles to determine parent controllers, child controllers, or which 
 <!-- .slide: data-background-transition="none" -->
 <!-- .slide: data-transition="none" -->
 @title[ShellPkg Main Libraries 02]
-<p align="right"><span class="gold" >ShellPkg Main Libraries</span></p>
+### <p align="right"><span class="gold" >ShellPkg Main Libraries</span></p>
 
 Note: 
 
@@ -447,7 +450,7 @@ Note:
 <!-- .slide: data-background-transition="none" -->
 <!-- .slide: data-transition="none" -->
 @title[ShellPkg Main Libraries 03]
-<p align="right"><span class="gold" >ShellPkg Main Libraries</span></p>
+### <p align="right"><span class="gold" >ShellPkg Main Libraries</span></p>
 
 Note: 
 
@@ -473,7 +476,7 @@ sorting of handles to determine parent controllers, child controllers, or which 
 ---?image=/assets/images/slides/Slide35.JPG
 <!-- .slide: data-transition="none" -->
 @title[EDK II ShellPkg]
-<p align="right"><span class="gold" >ShellPkg Main Libraries</span></p>
+### <p align="right"><span class="gold" >ShellPkg Main Libraries</span></p>
 
 Note: 
 
@@ -494,7 +497,7 @@ Note:
 <!-- .slide: data-background-transition="none" -->
 <!-- .slide: data-transition="none" -->
 @title[EDK II ShellPkg 02]
-<p align="right"><span class="gold" >ShellPkg Main Libraries</span></p>
+### <p align="right"><span class="gold" >ShellPkg Main Libraries</span></p>
 
 Note: 
 
@@ -503,7 +506,7 @@ Note:
 <!-- .slide: data-background-transition="none" -->
 <!-- .slide: data-transition="none" -->
 @title[EDK II ShellPkg 03]
-<p align="right"><span class="gold" >ShellPkg Main Libraries</span></p>
+### <p align="right"><span class="gold" >ShellPkg Main Libraries</span></p>
 
 Note: 
 
@@ -563,12 +566,12 @@ Note:
 <br>
 <p align="center"><span class="gold" >Shell Enhanced Scripting</span></p>
 <br>
- @fa[first-order-alt gp-bullet-magenta]<span style="font-size:0.9em">&nbsp;&nbsp;Contains <br>.nsh</b> extention</span> <br>
- @fa[first-order-alt gp-bullet-gold]<span style="font-size:0.9em">&nbsp;&nbsp;"Startup.nsh runs first</span> <br>
- @fa[first-order-alt gp-bullet-cyan]<span style="font-size:0.9em">&nbsp;&nbsp;Supports:</span><br>
- <span style="font-size:0.6em">&nbsp;&nbsp;&nbsp;&nbsp;&check;&nbsp;&nbsp;Command-line arguments</span><br>
- <span style="font-size:0.6em">&nbsp;&nbsp;&nbsp;&nbsp;&check;&nbsp;&nbsp;Standard script commands</span> <br>
- <span style="font-size:0.6em">&nbsp;&nbsp;&nbsp;&nbsp;&check;&nbsp;&nbsp;Input & output redirection & pipes</span><br>
+ @fa[circle gp-bullet-magenta]<span style="font-size:0.9em">&nbsp;&nbsp;Contains <b>.nsh</b> extention</span> <br>
+ @fa[circle gp-bullet-gold]<span style="font-size:0.9em">&nbsp;&nbsp;"Startup.nsh" runs first</span> <br>
+ @fa[circle gp-bullet-cyan]<span style="font-size:0.9em">&nbsp;&nbsp;Supports:</span><br>
+ <span style="font-size:0.6em">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&check;&nbsp;&nbsp;Command-line arguments</span><br>
+ <span style="font-size:0.6em">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&check;&nbsp;&nbsp;Standard script commands</span> <br>
+ <span style="font-size:0.6em">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&check;&nbsp;&nbsp;Input & output redirection & pipes</span><br>
  
 
 Note: 
@@ -661,13 +664,11 @@ endfor
 
 ---?image=/assets/images/slides/Slide47.JPG
 @title[Documentation for EDK II ShellPkg]
-<br>
-<p align="left"><span class="gold" >Documentation for EDK II ShellPkg</span></p>
-<br>
+<p align="center"><span class="gold" >Documentation for EDK II ShellPkg</span></p>
 <br>
 <br>
-@fa[book-open gp-bullet-ltgreen]<span style="font-size:0.9em">&nbsp;&nbsp;Documenation Link:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/tianocore/tianocore.github.io/wiki/ShellPkg">wiki Shell Package page </a></span>
+<br>
+ @fa[book-open gp-bullet-ltgreen]<span style="font-size:0.9em">&nbsp;&nbsp;Documenation Link:<br> &nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/tianocore/tianocore.github.io/wiki/ShellPkg">wiki Shell Package</a></span>
 
 
 Note:
@@ -675,7 +676,7 @@ Note:
 UEFI Shell Documentation updated in the Engineering Resources section
 
 
----?code=Sample/MyShellApp/MyShellApp.c&lang=c++&title=UEFI Shell 2.2 Vs. EFI Shell 1.0
+---?code=Sample/MyShellApp/MyShellApp.c&lang=c++&title=UEFI Shell 2.2   &nbsp;&nbsp;Vs.   &nbsp;&nbsp;EFI Shell 1.0
 
 
 Note:
@@ -685,8 +686,7 @@ There are 2 different GUIDs
 Simply try to open one GUID verse the other to see which Shell is currently in use.
 
 
-+++?code=Sample/MyShellApp/MyShellApp.c&lang=c++&title=UEFI Shell 2.2 Vs. EFI Shell 1.0
-<br>
++++?code=Sample/MyShellApp/MyShellApp.c&lang=c++&title=UEFI Shell 2.2   &nbsp;&nbsp;Vs.   &nbsp;&nbsp;EFI Shell 1.0
 
 @[70-79](check input parameters from command line using UEFI Shell 2.2)
 @[81-82](No error so assign Argc & Argv from Shell 2.2)
@@ -707,8 +707,8 @@ Simply try to open one GUID verse the other to see which Shell is currently in u
 
 ---?image=/assets/images/slides/Slide52.JPG
 @title[Legacy vs. UEFI ]
-<br>
-<p align="left"><span class="gold" >Legacy vs. UEFI</span></p>
+
+### <p align="right"><span class="gold" >Legacy vs. UEFI</span></p>
 
 Note:
 The UEFI SHELL is an UEFI application that allows you to interface with the UEFI environment prior to the time the OS is loaded. Once the OS starts loading, the UEFI environment is no longer accessible through the Shell. 
@@ -718,8 +718,7 @@ The UEFI Shell supports a command line interface similar to DOS or Unix.  In fac
 
 ---?image=/assets/images/slides/Slide54.JPG
 @title[Shell Usage ]
-<br>
-<p align="left"><span class="gold" >Shell Usage</span></p>
+### <p align="right"><span class="gold" >Shell Usage</span></p>
 
 Note:
 The shell is where preboot programs  will execute.  For example, manufacturing test applications with the rich pre boot environment there is no need to run / execute an operating system
@@ -746,8 +745,7 @@ Typical environment that an EFI application might need to execute pre-operating 
 
 ---?image=/assets/images/slides/Slide56.JPG
 @title[Accessing the Shell]
-<br>
-<p align="left"><span class="gold" >Accessing the Shell</span></p>
+### <p align="right"><span class="gold" >Accessing the Shell</span></p>
 
 Note:
 Boot UEFI Shell from FAT/FAT32 partition:
@@ -759,7 +757,7 @@ Boot UEFI Shell from FAT/FAT32 partition:
 ---?image=/assets/images/slides/Slide58.JPG
 <!-- .slide: data-transition="none" -->	 
 @title[UEFI File System & Device Path]
-<br>
+
 <p align="left"><span class="gold" >UEFI File System & Device Path</span></p>
 
 
@@ -863,11 +861,11 @@ The EFI shell is replacing what is to the left of the “:” with the device pa
 ---  
 @title[Summary]
 ##### <p align="center"<span class="gold"   >Summary </span></p><br>
-
- @fa[certificate gp-bullet-green]<span style="font-size:0.9em">&nbsp;&nbsp;Explain UEFI, the shell, and how they work together </span><br><br>
- @fa[certificate gp-bullet-cyan]<span style="font-size:0.9em">&nbsp;&nbsp;Define the shell components</span><br><br>
- @fa[certificate gp-bullet-yellow]<span style="font-size:0.9em">&nbsp;&nbsp;Use the shell  API  in a UEFI application</span> <br><br>
- @fa[certificate gp-bullet-magenta]<span style="font-size:0.9em">&nbsp;&nbsp;UEFI Shell command Library</span> 
+<br>
+ @fa[certificate gp-bullet-green]<span style="font-size:0.9em">&nbsp;&nbsp;Explain UEFI, the shell, and how they work together </span><br>
+ @fa[certificate gp-bullet-cyan]<span style="font-size:0.9em">&nbsp;&nbsp;Define the shell components</span><br>
+ @fa[certificate gp-bullet-yellow]<span style="font-size:0.9em">&nbsp;&nbsp;Use the shell  API  in a UEFI application</span> <br>
+ @fa[certificate gp-bullet-magenta]<span style="font-size:0.9em">&nbsp;&nbsp;UEFI Shell command Library</span> <br>
  @fa[certificate gp-bullet-ltgreen]<span style="font-size:0.9em">&nbsp;&nbsp;UEFI Shell scripts</span> 
 
  
