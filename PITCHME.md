@@ -626,15 +626,15 @@ The UEFI Shell can execute commands from a file, which is called a batch script 
  endif
 ```
 
-@[2-4](Check if Shell supports level 3 commands - "ult" is <u>u</u>nsigned <u>l</u>ess <u>t</u>han)
+@[2-4](Check if Shell supports level 3 commands - That means a Command Line Interface (CLI)
 @[9-10](Check that Shell supports Debug1 profile.)
 
 
 
 Note:
-Walk through the code
 
-The ULT is unsigned/less than
+Walk through the code
+- "ult" is <u>u</u>nsigned <u>l</u>ess <u>t</u>han)
 
 ---
 @title[UEFI Shell Script Example]
@@ -661,6 +661,11 @@ for %a run (3 1 -1)
 endfor
 ```
 
+Note:
+walk through the script calling the second script
+- if
+- for loop
+  - %a counting down...
 
 ---?image=/assets/images/slides/Slide47.JPG
 @title[Documentation for EDK II ShellPkg]
@@ -694,10 +699,9 @@ UEFI Shell Documentation updated in the Engineering Resources section
  EFI_SHELL_PARAMETERS_PROTOCOL    *mEfiShellParametersProtocol;
  EFI_SHELL_INTERFACE              *mEfiShellInterface;
 //
-
 ```
 
-
+<span style="font-size:0.6em">&nbsp;&nbsp;See example C file: <a href="Sample/MyShellApp/MyShellApp.c">MyShellApp.c </a></span>
 
 Note:
 
@@ -706,10 +710,10 @@ Protocol GUID will be for either Shell 1.0 or Shell 2.0
 
 +++?code=Sample/MyShellApp/MyShellApp.c&lang=c++&title=UEFI Shell 2.2 Vs. EFI Shell 1.0
 
-@[70-79](check input parameters from command line using UEFI Shell 2.2)
-@[81-82](No error so assign Argc & Argv from Shell 2.2)
-@[85-92](Else, check if EFI Shell 1.0 )
-@[96-97](No error so assign Argc & Argv from Shell 1.0)
+@[69-79](Check input parameters from command line using UEFI Shell 2.2 - notice <b>gEfiShellParametersProtocolGuid</b>)
+@[81-82](Protocol GUID was found, so assign Argc & Argv from Shell 2.2 protocol)
+@[85-92](Else, check if EFI Shell 1.0 - notice <b>gEfiShellInterfaceGuid</b> , Lower case "g")
+@[96-97](Protocol GUID was found, so assign Argc & Argv from Shell 1.0 protocol)
 @[99-100](Else, Error out of application  )
 
 Note:
@@ -718,6 +722,9 @@ This slide shows how to access UEFI Shell 2.0 Versus EFI Shell 1.0
 There are 2 different GUIDs 
 Simply try to open one GUID verse the other to see which Shell is currently in use.
 
+Notice the lower case "g" is for global - this notation is used throughout EDK II code
+
+Lower case "m" means global for "my" Application, driver, etc
 
 
 
