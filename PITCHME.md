@@ -701,7 +701,7 @@ UEFI Shell Documentation updated in the Engineering Resources section
 //
 ```
 
-<span style="font-size:0.6em">&nbsp;&nbsp;See example C file: <a href="Sample/MyShellApp/MyShellApp.c">MyShellApp.c </a></span>
+<span style="font-size:0.6em">&nbsp;&nbsp;See example C file: <a href="https://github.com/Laurie0131/UEFI_Shell_App_pres/tree/master/Sample/MyShellApp/MyShellApp.c">MyShellApp.c </a></span>
 
 Note:
 
