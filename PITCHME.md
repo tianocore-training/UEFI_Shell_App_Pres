@@ -707,6 +707,15 @@ Note:
 
 Protocol GUID will be for either Shell 1.0 or Shell 2.0
 
+This slide shows how to access UEFI Shell 2.0 Versus EFI Shell 1.0
+There are 2 different GUIDs 
+
+Simply try to open one GUID verse the other to see which Shell is currently in use.
+
+Notice the lower case "g" is for global - this notation is used throughout EDK II code
+
+Lower case "m" means global for "my" Application, driver, etc
+
 
 +++?code=Sample/MyShellApp/MyShellApp.c&lang=c++&title=UEFI Shell 2.2 Vs. EFI Shell 1.0
 
