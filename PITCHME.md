@@ -476,7 +476,7 @@ sorting of handles to determine parent controllers, child controllers, or which 
 ---?image=/assets/images/slides/Slide35.JPG
 <!-- .slide: data-transition="none" -->
 @title[EDK II ShellPkg]
-<p align="right"><span style="font-size:01.1em"><font color="#e49436">ShellPkg Main Libraries</font></span></p>
+<p align="right"><span style="font-size:01.1em"><font color="#e49436">EDK II ShellPkg</font></span></p>
 
 Note: 
 
@@ -497,7 +497,7 @@ Note:
 <!-- .slide: data-background-transition="none" -->
 <!-- .slide: data-transition="none" -->
 @title[EDK II ShellPkg 02]
-<p align="right"><span style="font-size:01.1em"><font color="#e49436">ShellPkg Main Libraries</font></span></p>
+<p align="right"><span style="font-size:01.1em"><font color="#e49436">EDK II ShellPkg</font></span></p>
 
 Note: 
 
@@ -506,7 +506,7 @@ Note:
 <!-- .slide: data-background-transition="none" -->
 <!-- .slide: data-transition="none" -->
 @title[EDK II ShellPkg 03]
-<p align="right"><span style="font-size:01.1em"><font color="#e49436">ShellPkg Main Libraries</font></span></p>
+<p align="right"><span style="font-size:01.1em"><font color="#e49436">EDK II ShellPkg</font></span></p>
 
 Note: 
 
