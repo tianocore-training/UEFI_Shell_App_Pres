@@ -32,6 +32,6 @@
 # UEFI_Shell_App_pres
 Define &amp; explain the components of the UEFI Shell Application
 
-To see the Slides goto https://gitpitch.com/Laurie0131/UEFI_Shell_App_pres/master#/
+To see the Slides goto https://gitpitch.com/tianocore-training/UEFI_Shell_App_Pres/master#/
 
 
