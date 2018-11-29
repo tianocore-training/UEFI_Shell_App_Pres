@@ -115,21 +115,21 @@ Note:
 
 Note:
 
+
 +++?image=/assets/images/slides/Slide8.JPG
 <!-- .slide: data-background-transition="none" -->
 <!-- .slide: data-transition="none" -->
 @title[What is a UEFI Shell? 05]
 <p align="right"><span class="gold" >What is a UEFI Shell?</span></p>
 
+@snap[north-east span-40 fragment]
+@css[ text-yellow](<br>&nbsp;)
+![ItsAn](/assets/images/Its_an.png)
+@snapend
 
-Note:
-
-+++?image=/assets/images/slides/Slide9.JPG
-<!-- .slide: data-background-transition="none" -->
-<!-- .slide: data-transition="none" -->
-@title[What is a UEFI Shell? 06]
-<p align="right"><span class="gold" >What is a UEFI Shell?</span></p>
-
+@snap[east span-30 fragment]
+@css[ text-white](<span style="font-size:01.2em"><br><br>&nbsp;<b>Extensive & Standardize Pre-OS UEFI Application</b></span>)
+@snapend
 
 Note:
 
@@ -171,13 +171,29 @@ USE THESE AS BULLETS
 
 Note:
 
-
----?image=/assets/images/slides/Slide14.JPG
-<!-- .slide: data-transition="none" -->
+---
 @title[UEFI Shell Elements]
 ### <p align="right"><span class="gold" >UEFI Shell Elements</span></p>
 
-Note:
+
+
+@snap[west span-45  fragment]
+@box[bg-blue text-white waved ](<span style="font-size:01.5em" ><font face="Arial">Small Size Profiles</font></span> )
+@snapend
+
+@snap[east span-45  fragment]
+@box[bg-yellow text-blue waved ](<span style="font-size:01.5em" ><font face="Arial">Shell Commands</font> </span> )
+@snapend
+
+@snap[south-west span-45  fragment]
+@box[bg-purple text-white waved ](<span style="font-size:01.5em" ><font face="Arial">New Shell API<br>&nbsp;</font> </span><br> )
+@snapend
+
+@snap[south-east span-45  fragment]
+@box[bg-green text-white waved  ](<span style="font-size:01.5em" ><font face="Arial">Enhanced Scripting</font> </span><br>)
+@snapend
+
+Note: 
 
 1)Small Size Profiles
 Took the UEFI Shell that Intel has been working on as a starting point 4 areas for size
@@ -229,80 +245,13 @@ UEFI Advantages = UEFI Shell Advantages
 
 
 
-+++?image=/assets/images/slides/Slide15.JPG
-<!-- .slide: data-background-transition="none" -->
-<!-- .slide: data-transition="none" -->
-@title[UEFI Shell Elements 02]
-### <p align="right"><span class="gold" >UEFI Shell Elements</span></p>
 
-Note: 
-
-+++?image=/assets/images/slides/Slide16.JPG
-<!-- .slide: data-background-transition="none" -->
-<!-- .slide: data-transition="none" -->
-@title[UEFI Shell Elements 03]
-### <p align="right"><span class="gold" >UEFI Shell Elements</span></p>
-
-Note: 
-
-+++?image=/assets/images/slides/Slide17.JPG
-<!-- .slide: data-background-transition="none" -->
-<!-- .slide: data-transition="none" -->
-@title[UEFI Shell Elements 04]
-### <p align="right"><span class="gold" >UEFI Shell Elements</span></p>
-
-Note: 
-1)Small Size Profiles
-Took the UEFI Shell that Intel has been working on as a starting point 4 areas for size
-
-Levels of support
-Different levels of support for different usage scenarios and space constraints:
-Level 0: No Command-line Interface (CLI). No shell commands. Only shell API.
-Level 1: Adds basic scripting support
-Level 2: Adds basic commands (cd, cp, mv)
-Level 3: Adds interactive CLI
-Shell support level can be detected using an environment variable.
-Beyond level 3, additional command “profiles” are defined for debug, networking and driver support
-
-2) Shell Commands
-
-Standardized existing usage
-Updated for UEFI 2.1+
-Standardized argument usage and output
-Example some of the grep commands are standardized
-
-3) New Shell API
-Smaller executable size – put common functionally back into the shell
-Expose previously hidden shell
-  capabilities – the shell does some really cool things
-– Example to change the current directory (CD) it did not exposes this and no one else could take advantage of this unless they were linked right into it
-
-Execution break support – control “C”
-
-4) Enhanced Scripting
-Compatible with existing scripts
-Added input redirection & piping
-Enhanced if command
-   example added capability to use shell without a HD or RAM Drive present. – may not have a HD for Manufacturing 
-May not have a Hard drive input output to environment variables
-
-
-
-UEFI Advantages = UEFI Shell Advantages
-- Flat memory model
-- Robust, extensible architecture
-- File system, Network, Keyboard, Mouse
-
-- UEFI Works = UEFI Shell Works
-- No additional requirements to run
-
-- Write Once/Run Anywhere For Pre-OS
-With standard API/commands = applications from different ISVs work on any platform (Ex: UEFI SCT)
-
-
-
----?image=/assets/images/slides/Slide19.JPG
+---
 @title[Small Size Profiles]
+
+@snap[midpoint span-65  ]
+@box[bg-blue text-white waved ](<span style="font-size:02.5em" ><font face="Arial">Small Size Profiles</font></span> )
+@snapend
 
 
 Note:
@@ -325,11 +274,48 @@ Shell support level can be detected using an environment variable.
 
 Beyond level 3, additional command “profiles” are defined for debug, networking and driver support
 
-
----?image=/assets/images/slides/Slide21.JPG
+---
 @title[Small Size Profiles detail]
 ### <p align="right"><span class="gold" >Small Size Profiles</span></p>
+<table>
+	<tr>
+		<td bgcolor="#4487f2"><p style="line-height:70%"><b>Level&nbsp;/&nbsp;Profile&nbsp;</b></p></td>
+		<td bgcolor="#4487f2"><p style="line-height:70%"><b>Commands&nbsp;</b></p></td>
+	</tr>
+	<tr>
+		<td bgcolor="#4487f2" height=".025"><span style="font-size:0.85em"><b>Level 0&nbsp;</b></span></td>
+		<td bgcolor="#D7D7D7" height=".025"><span style="font-size:0.65em"><font color="black">Shell API <b>Only</b> &nbsp; </font></span></td>
+	</tr>
+	<tr>
+		<td bgcolor="#4487f2" height=".025"><p style="line-height:20%"><span style="font-size:0.85em"><b>Level 1&nbsp;</b></span></p></td>
+		<td bgcolor="#D7D7D7" height=".025"><p style="line-height:20%"><span style="font-size:0.65em"><font color="black">Basic scripting support &nbsp;</font></span> </p></td>
+	</tr>
+	<tr>
+		<td bgcolor="#4487f2"><p style="line-height:20%"><span style="font-size:0.85em"><b>Level 2&nbsp;</b></span></p></td>
+		<td bgcolor="#D7D7D7"><p style="line-height:20%"><span style="font-size:0.65em"><font color="black">File Support, cmds(cd, cp, mv) &nbsp; </font></span></p></td>
+	</tr>
+	<tr>
+		<td bgcolor="#4487f2"><p style="line-height:20%"><span style="font-size:0.85em"><b>Level 3&nbsp;</b></span></p></td>
+		<td bgcolor="#D7D7D7"><p style="line-height:20%"><span style="font-size:0.65em"><font color="black"> Adds interactive CLI + Profiles&nbsp; </font></span></p></td>
+	</tr>
+	<tr>
+		<td bgcolor="#4487f2"><p style="line-height:20%"><span style="font-size:0.85em"><b>UEFI Debug Profile&nbsp;</b></span></p></td>
+		<td bgcolor="#D7D7D7"><p style="line-height:20%"><span style="font-size:0.55em"><font color="#4487f2"> bcfg, comp, dblk, dmem, dmpstore, echo, edit, &nbsp; </font></span></p></td>
+	</tr>
+	<tr>
+		<td bgcolor="#4487f2"><p style="line-height:20%"><span style="font-size:0.85em"><b>UEFI Network Profile&nbsp;</b></span></p></td>
+		<td bgcolor="#D7D7D7"><p style="line-height:20%"><span style="font-size:0.55em"><font color="#4487f2">ipconfig, ping &nbsp; </font></span></p></td>
+	</tr>
+	<tr>
+		<td bgcolor="#4487f2"><p style="line-height:20%"><span style="font-size:0.85em"><b>UEFI Driver Profile&nbsp;</b></span></p></td>
+		<td bgcolor="#D7D7D7"><p style="line-height:20%"><span style="font-size:0.55em"><font color="#4487f2"> drvdiag, openinfo, reconnect, load, unload&nbsp;</font></span> </p></td>
+	</tr>
 
+</table>
+
+@snap[south-west  fragment ]
+@box[bg-purple text-white rounded ](<span style="font-size:01.0em" ><font face="Arial"><b>Choose the shell that best matches your product needs </b></font></span> )
+@snapend
 
 Note:
 ## Small Size Profiles
@@ -352,12 +338,18 @@ Grouped the rest into 3 groups
 - UEFI Debug
 - Network
 - Driver
+- also install
 
 #### KEY POINT:  Choose the shell that best matches your product needs
 
 
----?image=/assets/images/slides/Slide23.JPG
+---
 @title[Shell Commands]
+
+
+@snap[midpoint span-65  ]
+@box[bg-yellow text-blue waved ](<span style="font-size:02.5em" ><font face="Arial">Shell Commands</font></span> )
+@snapend
 
 Note:
 
@@ -377,17 +369,51 @@ Only the commands built with the currenet shell being executed will also be list
 
 
 
----?image=/assets/images/slides/Slide27.JPG
+---
 @title[New Shell API]
+
+@snap[midpoint span-65  ]
+@box[bg-purple text-white waved ](<span style="font-size:02.5em" ><font face="Arial">New Shell API</font></span> )
+@snapend
 
 Note:
 
 ### New Shell API
+- Application interface
 
-
----?image=/assets/images/slides/Slide29.JPG
+---
 @title[New Shell API detail]
 ### <p align="right"><span class="gold" >New Shell API</span></p>
+<p align="center"><span style="font-size:01.1em; background-color:#643885">&nbsp;&nbsp;&nbsp;<span style="font-size:0.85em">`EFI_SHELL_PROTOCOL`</span>&nbsp;&nbsp;&nbsp;</span></p>
+
+<table>
+	<tr>
+		<td bgcolor="#4487f2"><p style="line-height:70%"><b>Group&nbsp;</b></p></td>
+		<td bgcolor="#4487f2"><p style="line-height:70%"><b>Functions&nbsp;</b></p></td>
+	</tr>
+	<tr>
+		<td bgcolor="#4487f2" height=".025"><span style="font-size:0.85em"><b>File Manipulation &nbsp;</b></span></td>
+		<td bgcolor="#D7D7D7" height=".025"><span style="font-size:0.5em"><font color="black">`OpenFileByName(), WriteFile(),` etc. . . &nbsp; </font></span></td>
+	</tr>
+	<tr>
+		<td bgcolor="#4487f2" height=".025"><p style="line-height:80%"><span style="font-size:0.85em"><b>Mapping, Alias & Environmental Variables&nbsp;</b></span></p></td>
+		<td bgcolor="#D7D7D7" height=".025"><p style="line-height:50%"><span style="font-size:0.5em"><font color="black">`GetMapFromDevicePath(), GetFilePathFromDevicePath()`, etc . . .&nbsp;</font></span> </p></td>
+	</tr>
+	<tr>
+		<td bgcolor="#4487f2"><p style="line-height:80%"><span style="font-size:0.85em"><b>Launch Application or Script&nbsp;</b></span></p></td>
+		<td bgcolor="#D7D7D7"><p style="line-height:50%"><span style="font-size:0.5em"><font color="black">`Execute(), BatchIsActive(), IsRootShell()`,etc . . . &nbsp; </font></span></p></td>
+	</tr>
+	<tr>
+		<td bgcolor="#4487f2"><p style="line-height:20%"><span style="font-size:0.85em"><b>Miscellaneous &nbsp;</b></span></p></td>
+		<td bgcolor="#D7D7D7"><p style="line-height:20%"><span style="font-size:0.5em"><font color="black">`GetPageBreak(), EnablePageBreak()` ,etc . . . &nbsp; </font></span></p></td>
+	</tr>
+
+</table>
+
+@snap[south-west  fragment ]
+@box[bg-purple text-white rounded ](<span style="font-size:01.0em" ><font face="Arial"><b>`EFI_SHELL_PROTOCOL` is installed on each application image handle </b></font></span> )
+@snapend
+
 
 Note:
 ### New Shell API
@@ -473,40 +499,26 @@ sorting of handles to determine parent controllers, child controllers, or which 
 
 
 
----?image=/assets/images/slides/Slide35.JPG
-<!-- .slide: data-transition="none" -->
+---
 @title[EDK II ShellPkg]
-<p align="right"><span style="font-size:01.1em"><font color="#e49436">EDK II ShellPkg</font></span></p>
-
-Note: 
+<p align="right"><span style="font-size:01.1em"><font color="#e49436"><b>EDK II ShellPkg</b></font></span></p>
 
 
-- EDK II native library for shell applications 
-  - ShellPkg on Open Source, Repository: https://github.com/tianocore/edk2/tree/master/ShellPkg
-- Supports binary portability between EFI Shell 1.0 and UEFI 2.0 shell
-- Shell protocols: Calls into UEFI (default) or EFI for functionality
-- Shell parameters
-  - Handles parameter parsing for flag, value, and position command-line parameters
-  - EDK II UEFI Shell 2.0 Library globals in Shell applications
-    - #Include <Library/ShellLib.h>
-    - gEfiShellParametersProtocol  
-    - gEfiShellProtocol
+@snap[north-west span-45  fragment]
+@css[text-yellow](<br> <br>&nbsp;)
+@box[bg-blue text-white rounded ](<span style="font-size:01.5em" ><font face="Arial">Support binary portability</font></span> )
+@snapend
 
+@snap[north-east span-45  fragment]
+@css[text-yellow](<br> <br>&nbsp;)
+@box[bg-green text-white rounded ](<span style="font-size:01.5em" ><font face="Arial">Shell protocols<br>&nbsp;</font> </span> )
+@snapend
+
+@snap[south span-55  fragment]
+@box[bg-purple text-white rounded ](<span style="font-size:01.5em" ><font face="Arial">Shell parameters&nbsp;</font> </span><span style="font-size:0.65em" ><br>&num;`include` &lt;`Library/ShellLib.h`&gt;<br>`gEfiShellParametersProtocol`<br>`gEfiShellProtocol` </span> )
 	
-+++?image=/assets/images/slides/Slide36.JPG
-<!-- .slide: data-background-transition="none" -->
-<!-- .slide: data-transition="none" -->
-@title[EDK II ShellPkg 02]
-<p align="right"><span style="font-size:01.1em"><font color="#e49436">EDK II ShellPkg</font></span></p>
+@snapend
 
-Note: 
-
-
-+++?image=/assets/images/slides/Slide37.JPG
-<!-- .slide: data-background-transition="none" -->
-<!-- .slide: data-transition="none" -->
-@title[EDK II ShellPkg 03]
-<p align="right"><span style="font-size:01.1em"><font color="#e49436">EDK II ShellPkg</font></span></p>
 
 Note: 
 
@@ -525,7 +537,7 @@ Note:
 	
 ---
 @title[Shell Call example]
-<p align="right"><span style="font-size:01.1em"><font color="#e49436">Shell Call Example</font></span></p>
+<p align="right"><span style="font-size:01.1em"><font color="#e49436"><b>Shell Call Example</b></font></span></p>
 
 ```C++
 // use UEFI shell 2.x interface
@@ -555,8 +567,14 @@ Note:
 
 Note:
 
----?image=/assets/images/slides/Slide40.JPG
+---
 @title[Enhanced Scripting]
+
+
+@snap[midpoint span-65  ]
+@box[bg-green text-white waved ](<span style="font-size:02.5em" ><font face="Arial">Enhanced Scripting</font></span> )
+@snapend
+
 
 Note: 
 
@@ -564,14 +582,14 @@ Note:
 ---
 @title[Enhanced Scripting details]
 <br>
-<p align="center"><span style="font-size:01.1em"><font color="#e49436">Shell Enhanced Scripting</font></span></p>
+<p align="center"><span style="font-size:01.1em"><font color="#e49436"><b>Shell Enhanced Scripting</b></font></span></p>
 <br>
  @fa[circle gp-bullet-magenta]<span style="font-size:0.9em">&nbsp;&nbsp;Contains <b>.nsh</b> extention</span> <br>
- @fa[circle gp-bullet-gold]<span style="font-size:0.9em">&nbsp;&nbsp;"Startup.nsh" runs first</span> <br>
+ @fa[circle gp-bullet-gold]<span style="font-size:0.9em">&nbsp;&nbsp;"`Startup.nsh`" runs first</span> <br>
  @fa[circle gp-bullet-cyan]<span style="font-size:0.9em">&nbsp;&nbsp;Supports:</span><br>
- <span style="font-size:0.7em">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&check;&nbsp;&nbsp;Command-line arguments</span><br>
- <span style="font-size:0.7em">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&check;&nbsp;&nbsp;Standard script commands</span> <br>
- <span style="font-size:0.7em">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&check;&nbsp;&nbsp;Input & output redirection & pipes</span><br>
+ <span style="font-size:0.8em">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&check;&nbsp;&nbsp;Command-line arguments</span><br>
+ <span style="font-size:0.8em">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&check;&nbsp;&nbsp;Standard script commands</span> <br>
+ <span style="font-size:0.8em">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&check;&nbsp;&nbsp;Input & output redirection & pipes</span><br>
  
 
 Note: 
@@ -593,7 +611,7 @@ Note:
 ---?image=/assets/images/slides/Slide43.JPG
 @title[Shell Scripts (Benefits)]
 <br>
-<p align="center"><span style="font-size:01.1em"><font color="#e49436">Shell Scripts (Benefits)</font></span></p>
+<p align="center"><span style="font-size:01.1em"><font color="#e49436"><b>Shell Scripts (Benefits)</b></font></span></p>
 
 Note: 
 
@@ -681,7 +699,7 @@ Note:
 UEFI Shell Documentation updated in the Engineering Resources section
 
 
----?
+---
 @title[UEFI Shell 2.2 Vs. EFI Shell 1.0]
 <br>
 <p align="center"><span style="font-size:01.1em"><font color="#e49436">UEFI Shell 2.2   &nbsp;&nbsp;Vs.   &nbsp;&nbsp;EFI Shell 1.0</font></span></p>
