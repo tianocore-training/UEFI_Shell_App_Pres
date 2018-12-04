@@ -587,9 +587,9 @@ Note:
  @fa[circle gp-bullet-magenta]<span style="font-size:0.9em">&nbsp;&nbsp;Contains <b>.nsh</b> extention</span> <br>
  @fa[circle gp-bullet-gold]<span style="font-size:0.9em">&nbsp;&nbsp;"`Startup.nsh`" runs first</span> <br>
  @fa[circle gp-bullet-cyan]<span style="font-size:0.9em">&nbsp;&nbsp;Supports:</span><br>
- <span style="font-size:0.8em">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&check;&nbsp;&nbsp;Command-line arguments</span><br>
- <span style="font-size:0.8em">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&check;&nbsp;&nbsp;Standard script commands</span> <br>
- <span style="font-size:0.8em">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&check;&nbsp;&nbsp;Input & output redirection & pipes</span><br>
+ <span style="font-size:0.8em">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>&check;</b>&nbsp;&nbsp;Command-line arguments</span><br>
+ <span style="font-size:0.8em">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>&check;</b>&nbsp;&nbsp;Standard script commands</span> <br>
+ <span style="font-size:0.8em">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>&check;</b>&nbsp;&nbsp;Input & output redirection & pipes</span><br>
  
 
 Note: 
@@ -608,10 +608,44 @@ Note:
 - Startup.nsh – First Shell script can be on any FS system. the first script run by the UEFI Shell and it can be run from any removable device
 
 
----?image=/assets/images/slides/Slide43.JPG
+---
 @title[Shell Scripts (Benefits)]
-<br>
 <p align="center"><span style="font-size:01.1em"><font color="#e49436"><b>Shell Scripts (Benefits)</b></font></span></p>
+
+@snap[north-west span-25  ]
+<br>
+<br>
+![shell1](/assets/images/shell1.png)
+@snapend
+
+@snap[north-east span-70   ]
+<br>
+<br>
+<br>
+<br>
+<span style="font-size:01.2em">Preform basic flow control&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+@snapend
+
+
+@snap[east span-25 fragment ]
+![shell2](/assets/images/shell2.png)
+@snapend
+
+@snap[west span-70 fragment  ]
+<span style="font-size:01.2em">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Allows branching / looping&nbsp;&nbsp;&nbsp;</span>
+@snapend
+
+
+@snap[south-west span-25 fragment ]
+![shell3](/assets/images/shell3.png)
+@snapend
+
+@snap[south-east span-70 fragment  ]
+<span style="font-size:01.2em">Users can control input, output and script nesting</span>
+<br>
+<br>
+<br>
+@snapend
 
 Note: 
 
